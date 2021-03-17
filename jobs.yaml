@@ -1,0 +1,119 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-128
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "128Mi"
+          requests:
+            memory: "128Mi"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-256
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "256Mi"
+          requests:
+            memory: "128Mi"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-512
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "512Mi"
+          requests:
+            memory: "128Mi"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-1024
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "1024Mi"
+          requests:
+            memory: "128Mi"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-2048
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "2048Mi"
+          requests:
+            memory: "128Mi"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-3072
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "3072Mi"
+          requests:
+            memory: "128Mi"
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dopey-4096
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: dopey
+        image: nfinstana/dopey
+        resources:
+          limits:
+            memory: "4096Mi"
+          requests:
+            memory: "128Mi"
